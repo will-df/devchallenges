@@ -6,7 +6,7 @@
 
 <div align="center">
   <h3>
-    <a href="https://will-df.github.io/interiordesignchallenge/index.html">
+    <a href="https://will-df.github.io/devchallenges/index.html">
       Demo index
     </a>
     <span> | </span>
@@ -30,17 +30,17 @@
   - [Features](#features)
   - [Acknowledgements](#acknowledgements)
 - [Interior Design](#interior-design)
-  - [Built With](#built-with)
-  - [Features](#features)
-  - [Acknowledgements](#acknowledgements)
+  - [Built With](#built-with1)
+  - [Features](#features1)
+  - [Acknowledgements](#acknowledgements1)
 - [Team Page](#team-page)
-  - [Built With](#built-with)
-  - [Features](#features)
-  - [Acknowledgements](#acknowledgements)
+  - [Built With](#built-with2)
+  - [Features](#features2)
+  - [Acknowledgements](#acknowledgements2)
 - [Recipe Page](#recipe-page)
-  - [Built With](#built-with)
-  - [Features](#features)
-  - [Acknowledgements](#acknowledgements)
+  - [Built With](#built-with3)
+  - [Features](#features3)
+  - [Acknowledgements](#acknowledgements3)
 - [Contact](#contact)
 
 <!-- OVERVIEW -->
