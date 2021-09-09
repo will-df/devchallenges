@@ -1,0 +1,207 @@
+* {
+    box-sizing: content-box;
+}
+
+body {
+    background-color: #181719;
+    color: white;
+}
+
+#navigation {
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.95);
+    overflow-x: hidden;
+    transition: 0.7s;
+}
+
+#navigation a {
+    flex-basis: 100%;
+    text-align: center;
+    font-family: Montserrat;
+    font-weight: 500;
+    color: inherit;
+    text-decoration: none;
+    margin: 3vw 0px;
+    transition: 0.5s;
+}
+
+#navigation a:hover {
+    opacity: 0.5;
+}
+
+#navigation .active {
+    font-weight: bold;
+    text-decoration: underline;
+    text-underline-offset: 0.5em;
+}
+
+#navigation .close-button {
+    position: absolute;
+    right: 5vw;
+    top: 5vw
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+}
+
+.menubutton {
+    color: inherit;
+    text-decoration: none;
+}
+
+.material-icons.md-36 {
+    font-size: 36px;
+    vertical-align: middle;
+}
+
+#logobutton {
+    font-family: "Crimson Pro";
+    text-transform: uppercase;
+    background: inherit;
+    color: inherit;
+    border: 1px solid currentColor;
+    padding: 0.5em;
+}
+
+.intro h1 {
+    font-family: Lora;
+    font-weight: 500;
+    font-size: 2em;
+}
+
+img {
+    max-width: 100%;
+}
+
+.intro {
+    font-family: Montserrat;
+}
+
+.intro p {
+    font-size: 0.8em;
+    width: 60%;
+}
+
+.intro a {
+    color: inherit;
+    text-decoration: none;
+    letter-spacing: +0.045em;
+}
+
+.arrow-link {
+    vertical-align: middle;
+}
+
+.main {
+    margin-bottom: -4vh;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    font-family: Montserrat;
+    font-size: 0.8em;
+    color: #BDBDBD;
+}
+
+footer a {
+    text-decoration: none;
+    color: #BDBDBD;
+}
+
+footer em {
+    text-decoration: underline;
+    font-style: normal;
+    font-weight: bold;
+}
+
+.designer {
+    max-width: 75%;
+    padding: 3%;
+    position: relative;
+    top: -8vh;
+    left: 12%;
+    background-color: #181719;
+}
+
+.designer img {
+    float: left;
+    border-radius: 50%;
+    max-width: 15%;
+    margin: 0px 5%;
+    z-index: 1;
+}
+
+.designer p {
+    clear: left;
+    font-family: Lora;
+    font-weight: bold;
+    max-width: 85%;
+    font-size: 1.5em;
+}
+
+.designer-name {
+    font-family: Montserrat;
+    font-size: 0.7em;
+    font-weight: 500;
+}
+
+.designer-role {
+    font-family: Montserrat;
+    font-size: 0.6em;
+    font-weight: 500;
+    color: #828282;
+}
+
+@media (min-width: 600px) {
+    header {
+        padding: 1vw 3vw;
+        margin-bottom: 8vw;
+    }
+    .menubutton {
+        display: none;
+    }
+    #navigation {
+        width: auto;
+        height: auto;
+        background-color: inherit;
+        position: initial;
+    }
+    #navigation .close-button {
+        display: none;
+    }
+    #navigation a {
+        flex-basis: auto;
+        margin: 0.5em 0px 0.5em 5vw;
+    }
+    .main-part {
+        display: flex;
+        align-content: center;
+        align-items: center;
+        padding: 0px 3vw;
+    }
+    .designer {
+        max-width: 50%;
+        position: relative;
+        top: -8vh;
+        left: 40%;
+    }
+    .intro {
+        margin-right: 5vw;
+        position: relative;
+        top: -8vh;
+    }
+}

@@ -1,0 +1,22 @@
+@use 'base';
+.intro {
+    display: flex;
+    font-family: base.$font-secondary;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 0.75em;
+    align-items: flex-start;
+    align-content: flex-start;
+    margin-right: 8%;
+    p {
+        margin: 0px 1em;
+        color: #4F4F4F;
+    }
+    img {
+        margin-top: 0.3em;
+    }
+    @media(min-width: base.$layout-breakpoint-small) {
+        font-size: 0.85em;
+        max-width: 600px;
+    }
+}

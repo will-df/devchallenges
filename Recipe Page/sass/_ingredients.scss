@@ -1,0 +1,43 @@
+@use 'base';
+.ingredients {
+    font-family: base.$font-secondary;
+    vertical-align: top;
+    h2,
+    h3 {
+        font-family: base.$font-primary;
+    }
+    h2 {
+        font-weight: bold;
+        font-size: 1em;
+    }
+    h3 {
+        font-style: italic;
+        font-weight: normal;
+        font-size: 1em;
+    }
+    .single-ingredient {
+        margin: {
+            bottom: 2vh;
+            top: 2vh;
+        }
+        input[type="checkbox"] {
+            width: 1.5em;
+            height: 1.5em;
+        }
+        label {
+            display: inline-block;
+            font-size: 0.88em;
+            max-width: 90%;
+            vertical-align: text-top;
+        }
+    }
+    @media (min-width:base.$layout-breakpoint-small) {
+        max-width: calc(100% - 250px);
+        h2 {
+            font-size: 1.5em;
+        }
+        .single-ingredient>label {
+            margin-left: 0.8em;
+        }
+    }
+}

@@ -1,0 +1,67 @@
+@use 'base';
+.info {
+    font-family: base.$font-secondary;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    row-gap: 2vh;
+     :not(:first-child) {
+        grid-row: 2;
+    }
+    .info-unit {
+        line-height: 0.8;
+        vertical-align: middle;
+        .icon {
+            font-size: 18px;
+            margin-right: 0.1em
+        }
+        .info-unit-text {
+            display: inline-block;
+            .info-unit-title {
+                font-size: 0.5em;
+                font-weight: bold;
+                color: #BDBDBD;
+            }
+            .info-unit-value {
+                font-size: 0.6em;
+                font-weight: 500;
+            }
+        }
+        &.serving {
+            .icon {
+                color: base.$color-highlight;
+            }
+            .info-unit-value {
+                color: base.$color-highlight;
+            }
+        }
+    }
+    @media (min-width: base.$layout-breakpoint-small) {
+        grid-template-columns: auto;
+        row-gap: 3vh;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+        border-radius: 12px;
+        padding: 4vw 3vw;
+        max-width: 220px;
+        float: right;
+        position: sticky;
+        top: 0;
+         :not(:first-child) {
+            grid-row: initial;
+        }
+        .info-unit {
+            line-height: 1;
+            .icon {
+                font-size: 24px;
+                margin-right: 0.3em
+            }
+            .info-unit-text {
+                .info-unit-title {
+                    font-size: 0.7em;
+                }
+                .info-unit-value {
+                    font-size: 0.8em;
+                }
+            }
+        }
+    }
+}

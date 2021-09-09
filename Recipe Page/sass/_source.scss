@@ -1,0 +1,15 @@
+@use 'base';
+$font-color: #BDBDBD;
+.source {
+    font-family: base.$font-secondary;
+    font-style: italic;
+    color: $font-color;
+    font-size: 0.75em;
+    a {
+        font-family: inherit;
+        color: inherit;
+        font-style: inherit;
+        text-decoration: none;
+        display: inline-block;
+    }
+}

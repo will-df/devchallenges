@@ -1,0 +1,21 @@
+$font-primary: "Playfair Display";
+$font-secondary: Montserrat;
+$font-color: #333333;
+$color-highlight: #F2994A;
+$background-color: #FAFAFA;
+$layout-breakpoint-small: 600px;
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    background-color: $background-color;
+    color: $font-color;
+    @media(min-width: $layout-breakpoint-small) {
+        padding: 0px 10vw;
+    }
+}

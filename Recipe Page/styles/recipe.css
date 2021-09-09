@@ -1,0 +1,247 @@
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  background-color: #FAFAFA;
+  color: #333333;
+}
+@media (min-width: 600px) {
+  body {
+    padding: 0px 10vw;
+  }
+}
+
+.intro {
+  display: flex;
+  font-family: Montserrat;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 0.75em;
+  align-items: flex-start;
+  align-content: flex-start;
+  margin-right: 8%;
+}
+.intro p {
+  margin: 0px 1em;
+  color: #4F4F4F;
+}
+.intro img {
+  margin-top: 0.3em;
+}
+@media (min-width: 600px) {
+  .intro {
+    font-size: 0.85em;
+    max-width: 600px;
+  }
+}
+
+.main-picture {
+  border-radius: 12px;
+  display: block;
+  margin: 1em 0px;
+}
+
+.info {
+  font-family: Montserrat;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  row-gap: 2vh;
+}
+.info :not(:first-child) {
+  grid-row: 2;
+}
+.info .info-unit {
+  line-height: 0.8;
+  vertical-align: middle;
+}
+.info .info-unit .icon {
+  font-size: 18px;
+  margin-right: 0.1em;
+}
+.info .info-unit .info-unit-text {
+  display: inline-block;
+}
+.info .info-unit .info-unit-text .info-unit-title {
+  font-size: 0.5em;
+  font-weight: bold;
+  color: #BDBDBD;
+}
+.info .info-unit .info-unit-text .info-unit-value {
+  font-size: 0.6em;
+  font-weight: 500;
+}
+.info .info-unit.serving .icon {
+  color: #F2994A;
+}
+.info .info-unit.serving .info-unit-value {
+  color: #F2994A;
+}
+@media (min-width: 600px) {
+  .info {
+    grid-template-columns: auto;
+    row-gap: 3vh;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    padding: 4vw 3vw;
+    max-width: 220px;
+    float: right;
+    position: sticky;
+    top: 0;
+  }
+  .info :not(:first-child) {
+    grid-row: initial;
+  }
+  .info .info-unit {
+    line-height: 1;
+  }
+  .info .info-unit .icon {
+    font-size: 24px;
+    margin-right: 0.3em;
+  }
+  .info .info-unit .info-unit-text .info-unit-title {
+    font-size: 0.7em;
+  }
+  .info .info-unit .info-unit-text .info-unit-value {
+    font-size: 0.8em;
+  }
+}
+
+.ingredients {
+  font-family: Montserrat;
+  vertical-align: top;
+}
+.ingredients h2,
+.ingredients h3 {
+  font-family: "Playfair Display";
+}
+.ingredients h2 {
+  font-weight: bold;
+  font-size: 1em;
+}
+.ingredients h3 {
+  font-style: italic;
+  font-weight: normal;
+  font-size: 1em;
+}
+.ingredients .single-ingredient {
+  margin-bottom: 2vh;
+  margin-top: 2vh;
+}
+.ingredients .single-ingredient input[type=checkbox] {
+  width: 1.5em;
+  height: 1.5em;
+}
+.ingredients .single-ingredient label {
+  display: inline-block;
+  font-size: 0.88em;
+  max-width: 90%;
+  vertical-align: text-top;
+}
+@media (min-width: 600px) {
+  .ingredients {
+    max-width: calc(100% - 250px);
+  }
+  .ingredients h2 {
+    font-size: 1.5em;
+  }
+  .ingredients .single-ingredient > label {
+    margin-left: 0.8em;
+  }
+}
+
+.steps {
+  font-family: Montserrat;
+}
+.steps h2 {
+  font-family: "Playfair Display";
+  font-weight: bold;
+  font-size: 1.5em;
+}
+.steps ol {
+  list-style: none;
+  counter-reset: steps;
+  padding-left: 3em;
+}
+.steps ol li {
+  counter-increment: steps;
+  position: relative;
+  margin-bottom: 2em;
+  margin-top: 2em;
+}
+.steps ol li::before {
+  content: counter(steps);
+  font-family: "Playfair Display";
+  font-weight: bold;
+  font-size: 1.5em;
+  position: absolute;
+  left: -2em;
+  background-color: #F2994A;
+  color: #FAFAFA;
+  width: 1.5em;
+  border-radius: 20%;
+  text-align: center;
+  vertical-align: middle;
+  padding-bottom: 0.25em;
+}
+@media (min-width: 600px) {
+  .steps {
+    max-width: calc(100% - 250px);
+  }
+  .steps h2 {
+    font-size: 1.5em;
+  }
+}
+
+.source {
+  font-family: Montserrat;
+  font-style: italic;
+  color: #BDBDBD;
+  font-size: 0.75em;
+}
+.source a {
+  font-family: inherit;
+  color: inherit;
+  font-style: inherit;
+  text-decoration: none;
+  display: inline-block;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  font-family: "Playfair Display";
+  font-size: 0.8em;
+  font-weight: 500;
+  color: #828282;
+  margin-top: 20vh;
+}
+footer a {
+  text-decoration: none;
+  color: #828282;
+}
+footer em {
+  text-decoration: underline;
+  font-style: normal;
+  font-weight: bold;
+}
+
+h1 {
+  font-family: "Playfair Display";
+  font-size: 1.5em;
+  margin-top: 4vh;
+  color: black;
+  margin-block-end: 0.2em;
+}
+@media (min-width: 600px) {
+  h1 {
+    font-size: 3em;
+  }
+}
+
+/*# sourceMappingURL=recipe.css.map */
