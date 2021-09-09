@@ -10,7 +10,7 @@ body {
   background-color: #FAFAFA;
   color: #333333;
 }
-@media (min-width: 600px) {
+@media (min-width: 992px) {
   body {
     padding: 0px 10vw;
   }
@@ -33,7 +33,7 @@ body {
 .intro img {
   margin-top: 0.3em;
 }
-@media (min-width: 600px) {
+@media (min-width: 992px) {
   .intro {
     font-size: 0.85em;
     max-width: 600px;
@@ -81,7 +81,7 @@ body {
 .info .info-unit.serving .info-unit-value {
   color: #F2994A;
 }
-@media (min-width: 600px) {
+@media (min-width: 992px) {
   .info {
     grid-template-columns: auto;
     row-gap: 3vh;
@@ -142,7 +142,7 @@ body {
   max-width: 90%;
   vertical-align: text-top;
 }
-@media (min-width: 600px) {
+@media (min-width: 992px) {
   .ingredients {
     max-width: calc(100% - 250px);
   }
@@ -188,7 +188,7 @@ body {
   vertical-align: middle;
   padding-bottom: 0.25em;
 }
-@media (min-width: 600px) {
+@media (min-width: 992px) {
   .steps {
     max-width: calc(100% - 250px);
   }
@@ -238,7 +238,7 @@ h1 {
   color: black;
   margin-block-end: 0.2em;
 }
-@media (min-width: 600px) {
+@media (min-width: 992px) {
   h1 {
     font-size: 3em;
   }
