@@ -127,7 +127,7 @@ Also for the first time I did a custom numbered list (you'll find a good article
 
 The [challenge](https://devchallenges.io/challenges/gcbWLxG6wdennelX7b8I) was to create an image gallery page.
 
-I adopted the usage of em units for all absolute mesures to allow for fast creation of the desktop version (mobile was done first!).
+I adopted the usage of em units for all absolute measures to allow for fast creation of the desktop version (mobile was done first!).
 The image gallery itself has been done with the usage of the grid display.
 
 ### Built With
