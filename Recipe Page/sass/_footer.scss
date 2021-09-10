@@ -4,11 +4,11 @@ footer {
     display: flex;
     justify-content: center;
     align-content: center;
-    font-family: base.$font-primary;
+    font-family: base.$font-secondary;
     font-size: 0.8em;
     font-weight: 500;
     color: $footer-font-color;
-    margin-top: 20vh;
+    margin-top: 10vh;
     a {
         text-decoration: none;
         color: $footer-font-color;
