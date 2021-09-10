@@ -1,0 +1,24 @@
+        $font-family: Montserrat,
+        sans-serif;
+        $font-standard-color: #4E5150;
+        * {
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: $font-family;
+            color: $font-standard-color;
+            padding-top: 1em;
+            @media (min-width: 1024px) {
+                font-size: 1.5em;
+                padding: {
+                    left: 10vw;
+                    right: 10vw;
+                }
+                ;
+            }
+        }
+        
+        img {
+            max-width: 100%;
+        }

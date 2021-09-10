@@ -1,0 +1,24 @@
+@use 'base';
+.facts-list {
+    display: flex;
+    font-weight: 600;
+    font-size: 0.75em;
+    justify-content: space-between;
+    padding: {
+        left: calc(50% - 10em);
+        right: calc(50% - 10em);
+    }
+    margin-top: 1em;
+    margin-bottom: 3em;
+    .fact {
+        background-color: #E5E5E5;
+        border-radius: 12px;
+        width: 6em;
+        padding: 0.75em 0;
+        text-align: center;
+        span {
+            color: #BDBDBD;
+            display: block;
+        }
+    }
+}

@@ -28,19 +28,16 @@
 - [404 page](#404-page)
   - [Built With](#built-with)
   - [Features](#features)
-  - [Acknowledgements](#acknowledgements)
 - [Interior Design](#interior-design)
   - [Built With](#built-with-1)
   - [Features](#features-1)
-  - [Acknowledgements](#acknowledgements-1)
 - [Team Page](#team-page)
   - [Built With](#built-with-2)
   - [Features](#features-2)
-  - [Acknowledgements](#acknowledgements2)
 - [Recipe Page](#recipe-page)
   - [Built With](#built-with-3)
   - [Features](#features-3)
-  - [Acknowledgements](#acknowledgements-3)
+- [Acknowledgements](#acknowledgements)
 - [Contact](#contact)
 
 <!-- OVERVIEW -->
@@ -66,10 +63,6 @@ I learnt to use the flexbox in this experience to make the page responsive and c
 
 - The page changes layout when the screen width is below/above 600px
 
-### Acknowledgements
-
-- [W3Schools](https://www.w3schools.com/)
-
 ## Interior Design
 
 ![screenshot](documentation/interiordesign.png)
@@ -90,10 +83,6 @@ First usage of material icons too, very powerful palette.
 - The page changes layout when the screen width is below/above 600px
 - Under 600 px of screen width, the menu is substituted by an hamburger button that opens a full screen overlay with the navigation links
 
-### Acknowledgements
-
-- [W3Schools](https://www.w3schools.com/)
-
 ## Team Page
 
 ![screenshot](documentation/teampage.png)
@@ -112,10 +101,6 @@ I wanted to use the grid display because I wanted to get some experience with it
 - The page changes layout when the screen width is below/above 600px
 - Under 600 px of screen width, images become 2 per row
 
-### Acknowledgements
-
-- [W3Schools](https://www.w3schools.com/)
-
 ## Recipe Page
 
 ![screenshot](documentation/recipepage.png)
@@ -133,10 +118,30 @@ Also for the first time I did a custom numbered list (you'll find a good article
 
 ### Features
 
-- The page changes layout when the screen width is below/above 600px
+- The page changes layout when the screen width is below/above 992px
 - The info box with cooking time, number of portions etc. sticks when scrolling down in the desktop layout
 
-### Acknowledgements
+## Gallery Master
+
+![screenshot](documentation/gallerymaster.png)
+
+The [challenge](https://devchallenges.io/challenges/gcbWLxG6wdennelX7b8I) was to create an image gallery page.
+
+I adopted the usage of em units for all absolute mesures to allow for fast creation of the desktop version (mobile was done first!).
+The image gallery itself has been done with the usage of the grid display.
+
+### Built With
+
+- HTML 5
+- CSS
+- [Sass](https://sass-lang.com/)
+
+### Features
+
+- The page changes layout when the screen width is below/above 1024px
+- All sizes have been defined in em units
+
+## Acknowledgements
 
 - [W3Schools](https://www.w3schools.com/)
 - [Chris Coyier](https://css-tricks.com/custom-list-number-styling/) for the interesting article on how to create custom ordered lists
