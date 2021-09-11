@@ -37,6 +37,9 @@
 - [Recipe Page](#recipe-page)
   - [Built With](#built-with-3)
   - [Features](#features-3)
+- [Recipe Page](#gallery-master)
+  - [Built With](#built-with-4)
+  - [Features](#features-4)
 - [Acknowledgements](#acknowledgements)
 - [Contact](#contact)
 
