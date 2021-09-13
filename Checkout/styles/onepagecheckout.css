@@ -1,0 +1,242 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Montserrat;
+  font-weight: 600;
+  color: #333333;
+  font-size: 12px;
+}
+@media (min-width: 800px) {
+  body {
+    font-size: 14px;
+    padding: 2.28em 10vw 0;
+  }
+}
+
+.cart {
+  background-color: #F2F2F2;
+  border-radius: 12px;
+  padding: 2em 1em 1em;
+  max-width: 800px;
+}
+@media (min-width: 800px) {
+  .cart {
+    margin-top: 3em;
+  }
+}
+.cart .cart-item {
+  margin-bottom: 2em;
+  margin-right: 2em;
+  display: grid;
+  row-gap: 1em;
+  grid-template-columns: 2.5fr 1fr 2fr;
+}
+.cart .cart-item img {
+  max-width: 10em;
+  border-radius: 12px;
+  grid-row: 1/span 4;
+}
+.cart .cart-item .item-name {
+  grid-column: 2/span 2;
+}
+.cart .cart-item .offer-price {
+  grid-column: 2;
+  color: #F2994A;
+  font-size: 1.17em;
+}
+.cart .cart-item .list-price {
+  grid-column: 3;
+  font-size: 0.83em;
+  text-decoration: line-through;
+}
+.cart .cart-item .quantity-control {
+  border: 1px solid #828282;
+  border-radius: 12px;
+  display: flex;
+  padding: 1em 0.6em;
+  justify-content: space-between;
+  align-items: center;
+  width: 10em;
+  grid-column: 2/span 2;
+  grid-row: 4;
+}
+.cart .cart-item .quantity-control button {
+  color: #828282;
+  background-color: #E0E0E0;
+  border: none;
+  text-align: center;
+  border-radius: 4px;
+  width: 1em;
+  height: 1em;
+  font-size: 1.2em;
+  vertical-align: middle;
+  padding: 0;
+  font-size: 16px;
+}
+.cart .cart-item .quantity-control input {
+  background-color: inherit;
+  border: none;
+  font-size: 16px;
+  font-family: inherit;
+  width: 2em;
+  text-align: center;
+}
+.cart .total {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 1.17em;
+  margin-top: 6em;
+}
+.cart .total tr {
+  border-top: 1px solid #BDBDBD;
+}
+.cart .total tr td {
+  padding: 0.75em 0;
+}
+.cart .total tr td:nth-child(2) {
+  text-align: right;
+}
+
+form {
+  max-width: 800px;
+}
+form fieldset {
+  border: none;
+  padding: 0;
+  margin-top: 3em;
+}
+form fieldset legend {
+  font-size: 1.17em;
+}
+form fieldset label {
+  font-size: 0.833em;
+  font-weight: inherit;
+  color: #4F4F4F;
+}
+form fieldset .input-with-icon {
+  position: relative;
+  margin-top: 1em;
+}
+form fieldset .input-with-icon .icon {
+  position: absolute;
+  color: #828282;
+  font-size: 18px;
+  bottom: 12px;
+  left: 0.5em;
+}
+form fieldset .input-with-icon button {
+  color: #828282;
+  background-color: #E0E0E0;
+  border: none;
+  text-align: center;
+  border-radius: 4px;
+  width: 1em;
+  height: 1em;
+  font-size: 1em;
+  vertical-align: middle;
+  padding: 0;
+  font-size: 16px;
+  position: absolute;
+  right: 0.5em;
+  bottom: 12px;
+}
+form fieldset .input-with-icon button span {
+  width: 1em;
+  height: 1em;
+  line-height: 1em;
+  font-size: inherit;
+}
+form fieldset input,
+form fieldset select {
+  display: block;
+  font-family: inherit;
+  padding: 1em 1em 1em 3em;
+  margin-top: 0.5em;
+  font-size: inherit;
+  font-weight: inherit;
+  border: 1px solid #828282;
+  border-radius: 10px;
+  width: 100%;
+  color: #333333;
+}
+form fieldset input::placeholder, form fieldset input::-ms-input-placeholder,
+form fieldset select::placeholder,
+form fieldset select::-ms-input-placeholder {
+  color: #828282;
+}
+form fieldset select {
+  appearance: none;
+}
+form fieldset .simple-checkbox {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+form fieldset .simple-checkbox input[type=checkbox] {
+  display: inline;
+  width: auto;
+  vertical-align: middle;
+}
+form fieldset .simple-checkbox input[type=checkbox] + label {
+  vertical-align: middle;
+}
+form fieldset .country-zip-block {
+  display: flex;
+  justify-content: space-between;
+}
+form fieldset .country-zip-block * {
+  flex-basis: 48%;
+}
+form button {
+  border-radius: 12px;
+  border: none;
+  background-color: #F2994A;
+  color: white;
+  font-family: inherit;
+  font-size: 1.33em;
+  font-weight: inherit;
+  padding: 1em 2em;
+  float: right;
+}
+
+.checkout {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-between;
+}
+@media (min-width: 800px) {
+  .checkout {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+  .checkout > * {
+    flex-basis: 46%;
+  }
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  font-size: 14px;
+  font-weight: 600;
+  color: #BDBDBD;
+  margin-top: 10vh;
+}
+footer a {
+  text-decoration: none;
+  color: #BDBDBD;
+}
+footer em {
+  text-decoration: underline;
+  font-style: normal;
+  font-weight: bold;
+}
+
+h1 {
+  margin-top: 1.33em;
+}
+
+/*# sourceMappingURL=onepagecheckout.css.map */

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta name="author" content="William De Filippo">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Round" rel="stylesheet">
+    <link rel="stylesheet" href="styles/onepagecheckout.css">
+    <title>Checkout</title>
+    <script src="js/onepagecheckout.js">
+    </script>
+</head>
+
+<body>
+    <h1>Checkout</h1>
+    <div class="checkout">
+        <form name="order-form" id="order-form" method="POST" onsubmit="alert('All fields have been validated!'); return false;">
+            <fieldset>
+                <legend>Contact Information</legend>
+
+                <div class="input-with-icon">
+                    <label for="email">E-mail</label>
+                    <span class="material-icons-round icon">email</span>
+                    <input type="email" name="email" id="email" placeholder="Enter your email..." required>
+                </div>
+
+                <div class="input-with-icon">
+                    <label for="phone">Phone</label>
+                    <span class="material-icons-round icon">phone</span>
+                    <input type="tel" name="phone" id="phone" placeholder="Enter your phone..." required>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Shipping address</legend>
+
+                <div class="input-with-icon">
+                    <label for="fullname">Full name</label>
+                    <span class="material-icons-round icon">account_circle</span>
+                    <input type="text" name="fullname" id="fullname" placeholder="Enter your full name..." required>
+                </div>
+
+                <div class="input-with-icon">
+                    <label for="address">Address</label>
+                    <span class="material-icons-round icon">home</span>
+                    <input type="text" name="address" id="address" placeholder="Your address..." required minlength="3">
+                </div>
+
+                <div class="input-with-icon">
+                    <label for="city">City</label>
+                    <span class="material-icons icon">location_city</span>
+                    <input type="text" name="city" id="city" required placeholder="Your city..." minlength="2">
+                </div>
+                <div class="country-zip-block">
+
+                    <div class="input-with-icon">
+                        <label for="country">Country</label>
+                        <span class="material-icons icon" id="country">location_city</span>
+                        <select name="country" placeholder="Your country..." required id="country-select" onchange="selectColor('country-select')">
+                        <option value="" disabled selected>Your country...</option>
+                        <option value="Switzerland">Switzerland</option>
+                        <option value="Italy">Italy</option>
+                        <option value="France">France</option></select>
+                        <button type="button"><span class="material-icons">
+                            keyboard_arrow_down
+                            </span></button>
+                    </div>
+
+                    <div class="input-with-icon">
+                        <label for="zipcode">Postal Code</label>
+                        <span class="material-icons icon">markunread_mailbox</span>
+                        <input type="text" name="zipcode" id="zipcode" placeholder="Your postal code..." required>
+                    </div>
+                </div>
+                <div class="simple-checkbox">
+                    <input type="checkbox" name="saveforlater" id="saveforlater"> <label for="saveforlater">Save this information for next time</label>
+                </div>
+            </fieldset>
+            <button type="submit">Continue</button>
+        </form>
+        <div class="cart">
+            <div class="cart-item">
+                <img src="img/photo1.png" alt="backpack image">
+                <span class="item-name">Vintage Backbag</span>
+                <span class="offer-price">$54.99</span> <span class="list-price">$94.99</span>
+                <div class="quantity-control">
+                    <button type="button" onclick="decrement('item-1-quantity')">&minus;</button>
+                    <input type="number" min="1" step="1" name="item-1-quantity" id="item-1-quantity" form="order-form" value="1" readonly>
+                    <button type="button" onclick="increment('item-1-quantity')">&plus;</button>
+                </div>
+
+            </div>
+            <div class="cart-item">
+                <img src="img/photo2.png" alt="levi shoes image">
+                <span class="item-name">Levi Shoes</span>
+                <span class="offer-price">$74.99</span> <span class="list-price">$124.99</span>
+                <div class="quantity-control">
+                    <button type="button" onclick="decrement('item-2-quantity')">&minus;</button>
+                    <input type="number" min="1" step="1" name="item-2-quantity" id="item-2-quantity" form="order-form" value="1" readonly>
+                    <button type="button" onclick="increment('item-2-quantity')">&plus;</button>
+                </div>
+            </div>
+
+            <table class="total">
+                <tr>
+                    <td>Shipping</td>
+                    <td>$19</td>
+                </tr>
+                <tr>
+                    <td>Total</td>
+                    <td>$148.98</td>
+                </tr>
+            </table>
+
+        </div>
+    </div>
+    <footer>
+        <p>created by <a href="https://github.com/will-df"><em>will-df</em></a> - <a href="https://devchallenges.io/">devChallenges.io</a></p>
+    </footer>
+</body>
+
+</html>

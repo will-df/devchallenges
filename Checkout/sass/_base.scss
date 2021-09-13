@@ -1,0 +1,20 @@
+$font-family: Montserrat;
+$font-standard-color: #333333;
+$font-lighter-color: #828282;
+$highlight-color: #F2994A;
+$font-on-highlight-color: white;
+$mobile-max-width: 800px;
+* {
+    box-sizing: border-box
+}
+
+body {
+    font-family: $font-family;
+    font-weight: 600;
+    color: $font-standard-color;
+    font-size: 12px;
+    @media (min-width: $mobile-max-width) {
+        font-size: 14px;
+        padding: 2.28em 10vw 0;
+    }
+}

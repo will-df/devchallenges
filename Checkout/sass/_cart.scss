@@ -1,0 +1,83 @@
+@use 'base';
+$background-color: #F2F2F2;
+.cart {
+    background-color: $background-color;
+    border-radius: 12px;
+    padding: 2em 1em 1em;
+    max-width: base.$mobile-max-width;
+    @media (min-width: base.$mobile-max-width) {
+        margin-top: 3em;
+    }
+    .cart-item {
+        margin-bottom: 2em;
+        margin-right: 2em;
+        display: grid;
+        row-gap: 1em;
+        grid-template-columns: 2.5fr 1fr 2fr;
+        img {
+            max-width: 10em;
+            border-radius: 12px;
+            grid-row: 1 / span 4;
+        }
+        .item-name {
+            grid-column: 2 / span 2;
+        }
+        .offer-price {
+            grid-column: 2;
+            color: base.$highlight-color;
+            font-size: 1.17em;
+        }
+        .list-price {
+            grid-column: 3;
+            font-size: 0.83em;
+            text-decoration: line-through;
+        }
+        .quantity-control {
+            border: 1px solid #828282;
+            border-radius: 12px;
+            display: flex;
+            padding: 1em 0.6em;
+            justify-content: space-between;
+            align-items: center;
+            width: 10em;
+            grid-column: 2 / span 2;
+            grid-row: 4;
+            button {
+                color: #828282;
+                background-color: #E0E0E0;
+                border: none;
+                text-align: center;
+                border-radius: 4px;
+                width: 1em;
+                height: 1em;
+                font-size: 1.2em;
+                vertical-align: middle;
+                padding: 0;
+                font-size: 16px;
+            }
+            input {
+                background-color: inherit;
+                border: none;
+                font-size: 16px;
+                font-family: inherit;
+                width: 2em;
+                text-align: center;
+            }
+        }
+    }
+    .total {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 1.17em;
+        margin-top: 6em;
+        tr {
+            border-top: 1px solid #BDBDBD;
+            td {
+                padding: 0.75em 0;
+            }
+            td:nth-child(2) {
+                text-align: right;
+            }
+        }
+    }
+}

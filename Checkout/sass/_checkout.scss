@@ -1,0 +1,16 @@
+@use 'base';
+@use 'cart';
+@use 'orderform';
+.checkout {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    @media (min-width: base.$mobile-max-width) {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        >* {
+            flex-basis: 46%;
+        }
+    }
+}

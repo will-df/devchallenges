@@ -37,9 +37,12 @@
 - [Recipe Page](#recipe-page)
   - [Built With](#built-with-3)
   - [Features](#features-3)
-- [Recipe Page](#gallery-master)
+- [Gallery Master](#gallery-master)
   - [Built With](#built-with-4)
   - [Features](#features-4)
+- [Checkout](#checkout)
+  - [Built With](#built-with-5)
+  - [Features](#features-5)
 - [Acknowledgements](#acknowledgements)
 - [Contact](#contact)
 
@@ -142,6 +145,27 @@ The image gallery itself has been done with the usage of the grid display.
 ### Features
 
 - The page changes layout when the screen width is below/above 1024px
+- All sizes have been defined in em units
+
+## Checkout
+
+![screenshot](documentation/checkout.png)
+
+The [challenge](https://devchallenges.io/challenges/0J1NxxGhOUYVqihwegfO) was to create a responsive checkout page composed of a cart and an order form.
+
+I must say that customizing form elements' style is really a long work without using any premade library. I decided to customze by hand to get experience, but next time I am going to use some library for sure.
+
+Having kept the habit of defining all sizes in em units, it was super easy to create the responsive version.
+
+### Built With
+
+- HTML 5
+- CSS
+- [Sass](https://sass-lang.com/)
+
+### Features
+
+- The page changes layout when the screen width is below/above 800px
 - All sizes have been defined in em units
 
 ## Acknowledgements
